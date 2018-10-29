@@ -4,9 +4,8 @@ from restaurant.models import Restaurant
 def restaurant(request, name, res_id) :
     restaurant = Restaurant.objects.get(name=name, id=res_id)
 
-    return render(request, 'test.html')
+    return render(request, 'datail.html')
 
 def main_page(request) :
-    #restaurant = Restaurant.objects.get(name=name, id=res_id)
 
-    return render(request, 'main_page.html')
+    return render(request, 'index.html')
